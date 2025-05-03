@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabbed Sidebar Layout</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_small.css" />
+</head>
+<body>
+
+  <!-- Navbar with Full-width Tabs -->
+  <div class="navbar">
+    <div class="nav-tab" data-tab="backyart">BACKYART<br>STUDIOS</div>
+    <div class="nav-tab active" data-tab="shannon">S. <br> AMEY</div>
+    <div class="nav-tab" data-tab="annmai">A. M. L.<br>EJVINDSDATTER</div>
+    <div class="nav-tab" data-tab="annmai">S.<br>SIMON</div>
+    <div class="nav-tab" data-tab="annmai">V.<br>RIZZO</div>
+    <div class="nav-tab" data-tab="annmai">F.<br>FERRI</div>
+    <div class="nav-tab" data-tab="annmai">Y.<br>YVONNE</div>
+    <div class="nav-tab" data-tab="annmai">L.<br>LINUS</div>
+    <div class="nav-tab" data-tab="annmai">J.<br>JACOB</div>
+    <div class="nav-tab" data-tab="annmai">B.<br>BELINDA</div>
+    <div class="nav-tab" data-tab="annmai">S.<br>STINE</div>
+    <div class="nav-tab" data-tab="annmai">M.<br>MIRIAM</div>
+  </div>
+
+  <!-- Left Sidebar with Tabbed Content -->
+  <div class="left-fixed">
+    <div id="backyart-sidebar" class="sidebar-content">
+        <h3></h3>
+        <p>This sidebar content is related to the Home tab.</p>
+    </div>
+
+    <div id="shannon-sidebar" class="sidebar-content active">
+        <h3>Painter, mentor, nomad</h3>
+        <div class="sidebar-image-container">
+            <img src="img/shannon_amey.png" alt="Sidebar Image" class="sidebar-image">
+            <div class="overlay-text">SHANNON<br>AMEY</div>
+            <div class="multi-column">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum egestas fermentum. Curabitur pharetra eget nisl et tincidunt. Aenean dignissim eleifend lacus, at rhoncus nunc bibendum nec. In venenatis leo nibh, quis bibendum mauris accumsan dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam arcu, ultrices nec lorem eu, mollis blandit metus. Nullam fringilla euismod tempus. Integer quis dui non tellus pellentesque vehicula consequat vitae justo. Praesent congue odio nec lorem hendrerit maximus. Donec at felis mauris.
+
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed fringilla lobortis sapien, varius feugiat nibh auctor sed. Etiam lobortis purus id erat fermentum rutrum. Proin a purus volutpat, fringilla lacus in, iaculis ipsum. Morbi elementum faucibus lectus eu fermentum. Nulla ac dui non nisi tempus interdum. Fusce dictum tincidunt mi non vulputate. Ut id maximus nisl. Proin sed porttitor risus. Suspendisse potenti.
+            </div>
+        </div>
+    </div>
+
+    <div id="annmai-sidebar" class="sidebar-content">
+        <h3>Painter, performer, teacher, printmaker</h3>
+        <div class="sidebar-image-container">
+            <img src="img/ann_mai.png" alt="Sidebar Image" class="sidebar-image">
+            <div class="overlay-text">ANN MAI LUNDE<br>EJVINDSDATTER</div>
+            <div class="multi-column">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum egestas fermentum. Curabitur pharetra eget nisl et tincidunt. Aenean dignissim eleifend lacus, at rhoncus nunc bibendum nec. In venenatis leo nibh, quis bibendum mauris accumsan dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam arcu, ultrices nec lorem eu, mollis blandit metus. Nullam fringilla euismod tempus. Integer quis dui non tellus pellentesque vehicula consequat vitae justo. Praesent congue odio nec lorem hendrerit maximus. Donec at felis mauris.
+
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed fringilla lobortis sapien, varius feugiat nibh auctor sed. Etiam lobortis purus id erat fermentum rutrum. Proin a purus volutpat, fringilla lacus in, iaculis ipsum. Morbi elementum faucibus lectus eu fermentum. Nulla ac dui non nisi tempus interdum. Fusce dictum tincidunt mi non vulputate. Ut id maximus nisl. Proin sed porttitor risus. Suspendisse potenti.
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Right Scrollable Content -->
+  <div class="right-content">
+    <div id="backyart" class="tab-content">
+        <h2>Home Tab</h2>
+        <p>This is the content for the Home tab.</p>
+    </div>
+
+
+    <div id="shannon" class="tab-content active">
+        <h2>Shannon Tab</h2>
+        <p>This is the content for the shannon tab.</p>
+
+        <!-- Dynamic Image Grid -->
+        <div class="masonry">
+          <div class="masonry-item"><img src="img/shannon_content1.png" alt="Image 1"></div>
+          <div class="masonry-item"><img src="img/shannon_content2.png" alt="Image 2"></div>
+          <div class="masonry-item"><img src="img/shannon_content3.png" alt="Image 3"></div>
+          <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 4"></div>
+          <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 5"></div>
+          <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 6"></div>
+        </div>
+    </div>
+
+
+    <div id="annmai" class="tab-content">
+        <h2>AnnMia Tab</h2>
+        <p>This is the content for the AnnMai tab.</p>
+
+        <!-- Dynamic Image Grid -->
+        <div class="masonry">
+          <div class="masonry-item"><img src="img/shannon_content1.png" alt="Image 1"></div>
+          <div class="masonry-item"><img src="img/shannon_content2.png" alt="Image 2"></div>
+          <div class="masonry-item"><img src="img/shannon_content3.png" alt="Image 3"></div>
+          <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 4"></div>
+          <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 5"></div>
+          <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 6"></div>
+        </div>
+    </div>
+
+    <div id="simon" class="tab-content">
+      <h2>Simmon Tab</h2>
+      <p>This is the content for the AnnMai tab.</p>
+
+      <!-- Dynamic Image Grid -->
+      <div class="masonry">
+        <div class="masonry-item"><img src="img/shannon_content1.png" alt="Image 1"></div>
+        <div class="masonry-item"><img src="img/shannon_content2.png" alt="Image 2"></div>
+        <div class="masonry-item"><img src="img/shannon_content3.png" alt="Image 3"></div>
+        <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 4"></div>
+        <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 5"></div>
+        <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 6"></div>
+      </div>
+    </div>
+
+    <div id="valeria" class="tab-content">
+      <h2>Valeria Tab</h2>
+      <p>This is the content for the AnnMai tab.</p>
+
+      <!-- Dynamic Image Grid -->
+      <div class="masonry">
+        <div class="masonry-item"><img src="img/shannon_content1.png" alt="Image 1"></div>
+        <div class="masonry-item"><img src="img/shannon_content2.png" alt="Image 2"></div>
+        <div class="masonry-item"><img src="img/shannon_content3.png" alt="Image 3"></div>
+        <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 4"></div>
+        <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 5"></div>
+        <div class="masonry-item"><img src="https://via.placeholder.com/300x200" alt="Image 6"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="details-container">
+    <details name="artist-list">
+      <summary>Backyart</summary>
+      <div class="content">
+        <h3>Painter, mentor, nomad</h3>
+        <div class="over-text">SHANNON<br>AMEY</div>
+        <img src="img/shannon_amey.png" alt="Sidebar Image" class="accordion-header-image">
+        <div class="single-column">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum egestas fermentum. Curabitur pharetra eget nisl et tincidunt. Aenean dignissim eleifend lacus, at rhoncus nunc bibendum nec. In venenatis leo nibh, quis bibendum mauris accumsan dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam arcu, ultrices nec lorem eu, mollis blandit metus. Nullam fringilla euismod tempus. Integer quis dui non tellus pellentesque vehicula consequat vitae justo. Praesent congue odio nec lorem hendrerit maximus. Donec at felis mauris.
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed fringilla lobortis sapien, varius feugiat nibh auctor sed. Etiam lobortis purus id erat fermentum rutrum. Proin a purus volutpat, fringilla lacus in, iaculis ipsum. Morbi elementum faucibus lectus eu fermentum. Nulla ac dui non nisi tempus interdum. Fusce dictum tincidunt mi non vulputate. Ut id maximus nisl. Proin sed porttitor risus. Suspendisse potenti.
+        </div>
+      </div>
+    </details>
+    <details name="artist-list">
+      <summary>Shannon</summary>
+      <div class="content">
+        <h3>Painter, mentor, nomad</h3>
+        <div class="over-text">SHANNON<br>AMEY</div>
+        <img src="img/shannon_amey.png" alt="Sidebar Image" class="accordion-header-image">
+        <div class="single-column">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum egestas fermentum. Curabitur pharetra eget nisl et tincidunt. Aenean dignissim eleifend lacus, at rhoncus nunc bibendum nec. In venenatis leo nibh, quis bibendum mauris accumsan dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam arcu, ultrices nec lorem eu, mollis blandit metus. Nullam fringilla euismod tempus. Integer quis dui non tellus pellentesque vehicula consequat vitae justo. Praesent congue odio nec lorem hendrerit maximus. Donec at felis mauris.
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed fringilla lobortis sapien, varius feugiat nibh auctor sed. Etiam lobortis purus id erat fermentum rutrum. Proin a purus volutpat, fringilla lacus in, iaculis ipsum. Morbi elementum faucibus lectus eu fermentum. Nulla ac dui non nisi tempus interdum. Fusce dictum tincidunt mi non vulputate. Ut id maximus nisl. Proin sed porttitor risus. Suspendisse potenti.
+        </div>
+      </div>
+    </details>
+    <details name="artist-list">
+      <summary>AnnMai</summary>
+        <div class="content">Accordion 3 content</div>
+    </details>
+    <details name="artist-list">
+      <summary>Simon</summary>
+        <div class="content">Accordion 3 content</div>
+    </details>
+    <details name="artist-list">
+      <summary>Valeria</summary>
+        <div class="content">Accordion 3 content</div>
+    </details>
+    <details name="artist-list">
+      <summary>Francesco</summary>
+        <div class="content">Accordion 3 content</div>
+    </details>
+    <details name="artist-list">
+      <summary>Linus</summary>
+        <div class="content">Accordion 3 content</div>
+    </details>
+    <details name="artist-list">
+      <summary>Jacob</summary>
+        <div class="content">Accordion 3 content</div>
+    </details>
+    <details name="artist-list">
+      <summary>Yvon</summary>
+        <div class="content">Accordion 3 content</div>
+    </details>
+    <details name="artist-list">
+      <summary>Belinda</summary>
+        <div class="content">Accordion 3 content</div>
+    </details>
+    <details name="artist-list">
+      <summary>Mirian</summary>
+        <div class="content">Accordion 3 content</div>
+    </details>
+    <details name="artist-list">
+      <summary>Stine</summary>
+        <div class="content">Accordion 3 content</div>
+    </details>
+  </div>
+<!-- 
+  <div class="accordion" id="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header" data-toggle="collapse">Backyart</div>
+      <div class="accordion-content">
+        <p>This is the content for section 1.</p>
+      </div>
+    </div>
+    <div class="accordion-item active">
+      <div class="accordion-header" data-toggle="collapse">Shannon</div>
+      <div class="accordion-content">
+        <h3>Painter, mentor, nomad</h3>
+        <div class="sidebar-image-container">
+            <img src="img/shannon_amey.png" alt="Sidebar Image" class="sidebar-image">
+            <div class="overlay-text">SHANNON<br>AMEY</div>
+            <div class="multi-column">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum egestas fermentum. Curabitur pharetra eget nisl et tincidunt. Aenean dignissim eleifend lacus, at rhoncus nunc bibendum nec. In venenatis leo nibh, quis bibendum mauris accumsan dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam arcu, ultrices nec lorem eu, mollis blandit metus. Nullam fringilla euismod tempus. Integer quis dui non tellus pellentesque vehicula consequat vitae justo. Praesent congue odio nec lorem hendrerit maximus. Donec at felis mauris.
+
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed fringilla lobortis sapien, varius feugiat nibh auctor sed. Etiam lobortis purus id erat fermentum rutrum. Proin a purus volutpat, fringilla lacus in, iaculis ipsum. Morbi elementum faucibus lectus eu fermentum. Nulla ac dui non nisi tempus interdum. Fusce dictum tincidunt mi non vulputate. Ut id maximus nisl. Proin sed porttitor risus. Suspendisse potenti.
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header" data-toggle="collapse">AnnMain</div>
+      <div class="accordion-content">
+        <p>This is the content for section 3.</p>
+      </div>
+    </div>
+  </div>-->
+
+  <!-- JavaScript to switch tabs and sidebar content -->
+  <script>
+    const tabs = document.querySelectorAll('.nav-tab');
+    const contents = document.querySelectorAll('.tab-content');
+    const sidebars = document.querySelectorAll('.sidebar-content');
+    
+    const colors_dictionary={
+            "blank":"white",
+            "backyart":"grey", 
+            "shannon":"green", 
+            "annmai": "yellow"
+        };
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs, contents, and sidebars
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+        sidebars.forEach(s => s.classList.remove('active'));
+
+        // Add active class to clicked tab, content, and corresponding sidebar
+        tab.classList.add('active');
+        document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+        document.getElementById(tab.getAttribute('data-tab') + '-sidebar').classList.add('active');
+        
+
+        // color change
+        /*tabs.forEach(t => t.style.backgroundColor = colors_dictionary.blank);
+        document.querySelectorAll('.right-content')[0].style.backgroundColor = colors_dictionary[tab.getAttribute('data-tab')];
+        document.querySelectorAll('.left-fixed')[0].style.backgroundColor = colors_dictionary[tab.getAttribute('data-tab')];
+
+        document.getElementById(tab.getAttribute('data-tab')).style.backgroundColor = colors_dictionary[tab.getAttribute('data-tab')];
+        document.getElementById(tab.getAttribute('data-tab')+ '-sidebar').style.backgroundColor = colors_dictionary[tab.getAttribute('data-tab')];
+        tab.style.backgroundColor = colors_dictionary[tab.getAttribute('data-tab')];*/
+        
+
+      });
+    });
+
+    class Accordion {
+      constructor(el, parent, index) {
+
+        var rect = el.getBoundingClientRect();
+        //console.log(index, rect.top, rect.right, rect.bottom, rect.left);
+
+        this.index = index
+        this.topDistance = rect.top;  // get the absolute position of the element and make a transition to simulate a rolling behavious
+        this.el = el;
+        this.parent = parent;
+        this.summary = el.querySelector('summary');
+        this.content = el.querySelector('.content');
+        this.animation = null;
+        this.isClosing = false;
+        this.isExpanding = false;
+        this.summary.addEventListener('click', (e) => this.onClick(e));
+      }
+
+      onClick(e) {
+        e.preventDefault();
+        this.el.style.overflow = 'hidden';
+        if (this.isClosing || !this.el.open) {
+          this.open();
+        } else if (this.isExpanding || this.el.open) {
+          this.shrink();
+        }
+      }
+
+      shrink() {
+        this.isClosing = true;
+        const startHeight = `${this.el.offsetHeight}px`;
+        const endHeight = `${this.summary.offsetHeight}px`;
+
+        this.parent.style.transform = "translateY(0px)";  // reset container translation to 0px
+        if (this.animation) {
+          this.animation.cancel();
+        }
+        
+        this.animation = this.el.animate({
+          height: [startHeight, endHeight]
+        }, {
+          duration: 2000,
+          easing: 'ease-out'
+        });
+        
+        this.animation.onfinish = () => this.onAnimationFinish(false);
+        this.animation.oncancel = () => this.isClosing = false;
+      }
+
+      open() {
+        this.el.style.height = `${this.el.offsetHeight}px`;
+        this.el.open = true;
+        const startHeight = `${87.5*(this.index-1)}px`;
+        console.log(this.index, this.topDistance);
+        this.parent.style.transform = "translateY(-" + this.topDistance + "px)";
+        this.parent.style.transition = "2s transform ease";
+        window.requestAnimationFrame(() => this.expand());
+      }
+
+      expand() {
+        this.isExpanding = true;
+        const startHeight = `${this.el.offsetHeight}px`;
+        const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;
+        
+        if (this.animation) {
+          this.animation.cancel();
+        }
+        
+        this.animation = this.el.animate({
+          height: [startHeight, endHeight]
+        }, {
+          duration: 2000,
+          easing: 'ease-out'
+        });
+        this.animation.onfinish = () => this.onAnimationFinish(true);
+        this.animation.oncancel = () => this.isExpanding = false;
+      }
+
+      onAnimationFinish(open) {
+        this.el.open = open;
+        this.animation = null;
+        this.isClosing = false;
+        this.isExpanding = false;
+        this.el.style.height = this.el.style.overflow = '';
+      }
+    }
+
+    var parent = document.getElementById('details-container');
+    var index = 1;
+    document.querySelectorAll('details').forEach((el) => {
+      new Accordion(el, parent,index);
+      index = index +1;
+    });
+
+  </script>
+
+</body>
+</html>

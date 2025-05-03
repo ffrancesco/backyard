@@ -1,0 +1,117 @@
+@media (max-width: 768px) {
+	.navbar {
+	  display: none !important;
+	  height: 0px;
+	}
+	.left-fixed,
+	.right-content {
+	  display: none !important;
+	  height: 0px;
+	}
+
+	.accordion-header-image {
+	  width: 90%;
+	  float: right;
+	  left: 10px;
+	}
+
+	.single-column {
+	  clear: both;
+	  padding-top: 20px;
+	  text-align: justify;
+	  text-justify: inter-word;
+	}
+
+	.content > h3 {
+	  clear: both;
+	  float: right;
+	}
+
+	.over-text {
+	  clear: both;
+	  float: right;
+	}
+
+
+body {
+  font-size: 18px;
+  background: rgb(255, 255, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: rgb(104, 104, 104);
+  padding: 30px;
+}
+
+summary {
+  padding: 2rem 1.5rem;
+  display: block;
+  color: rgb(121, 121, 121);
+  position: relative;
+  cursor: pointer;
+  outline: transparent;
+  border-bottom: 0.5px solid;
+  height: calc(100vh/30);
+}
+
+details {
+  max-width: 800px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  /*border-radius: 0.5rem;*/
+  background: #ffffff;
+  transition: box-shadow 0.3s 0s ease;
+  box-shadow: 0px 0px 0px 0px #333;
+}
+
+details:focus-within {
+  background-color: #efefef;
+}
+details > summary {
+  list-style: none;
+}
+
+details > summary::marker,
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] > summary:before {
+  transform: rotate(0deg);
+}
+
+summary:before {
+  content: "";
+  opacity: 0.6;
+  background-image: url("/Users/ff/Downloads/reshot-icon-up-arrow-XMEL8JGW5T.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 1.8rem;
+  right: 1.5rem;
+  transform: rotate(180deg);
+  transform-origin: 1rem 50%;
+  transition: 2s transform ease;
+}
+
+details .content {
+  border-top: none;
+  padding: 0.5rem 2rem 2rem 2rem;
+  border-top: none;
+  color: #a9abb3;
+}
+
+details p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+details p:last-child {
+  padding: 0;
+}
+
+/* not needed for the accordion */
+a {
+  color: lightgray;
+  font-weight: bold;
+}
+}
