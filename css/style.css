@@ -1,3 +1,16 @@
+@import url('../fonts/fonts.css');
+
+:root {
+  /* Primary Colors */
+  --navbar-text-color: #646464;    /* Indigo */
+  --navbar-text-color-active: #282828;  /* Pink */
+  --navbar-background-color: #d2d2d2;     /* Emerald */
+  --content-background-color: #fafafa;
+  --navbar-background-hover: #ededed;
+  --body-color: #282828;
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,8 +19,12 @@
 
   body, html {
 	height: 100%;
-	font-family: sans-serif;
-  }
+	font-family: 'JetBrainsMono';
+	font-weight: 400;
+	font-style: normal;
+	background-color: var(--content-background-color);
+    font-family: 'JetBrainsMono', monospace;
+}
 
   /* Navbar (Tabs) */
   .navbar {
@@ -16,16 +33,19 @@
 	left: 0;
 	width: 100%;
 	height: 60px;
-	background-color: rgb(210, 210, 210);
+	background-color: var(--navbar-background-color);
 	display: flex;
 	align-items: center;
 	padding: 0 0px;
 	z-index: 1000;
 	/*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);*/
+	font-family: 'Manrope';
+	font-weight: 600;
+	font-style: normal;
   }
 
   .nav-tab {
-	color: #262626;
+	color: var(--navbar-text-color);
 	flex: 1;
 	padding: 14px 20px;
 	text-align: left;
@@ -33,15 +53,21 @@
 	border-bottom: 0.5px solid;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+	font-family: 'Manrope';
+	font-weight: 600;
+	font-style: normal;
   }
 
   .nav-tab.active {
-	border-color: #ffffff;
-	background-color: #ffffff;
+	border-color: var(--content-background-color);
+	background-color: var(--content-background-color);
+	color: var(--navbar-text-color-active);
+	font-weight: 700;
+	
   }
 
   .nav-tab:hover {
-	background-color: #ededed;
+	background-color: var(--navbar-background-hover);
   }
 
   /* Left Sidebar */
@@ -56,6 +82,9 @@
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
+	font-family: 'JetBrainsMono';
+	font-weight: 300;
+	font-style: normal;
   }
 
   .sidebar-content {
@@ -64,7 +93,10 @@
 
   .sidebar-content.active {
 	display: block;
-	background-color: #ffffff;
+	background-color: var(--content-background-color);
+	font-family: 'JetBrainsMono';
+	font-weight: 300;
+	font-style: normal;
   }
 
   
@@ -90,24 +122,31 @@
 	top: 0%;
 	right: 0%;
 	transform: translate(-0%, -30%);
-	font-size: 36px;
-	font-weight: bold;
-	color: rgb(47, 40, 40);
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	font-family: 'Manrope';
+	font-weight: 700;
+	font-style: normal;
+	line-height: 0.85;
+  	font-size: 3rem;  /* adjust as needed */
+	color: var(--body-color);
 	text-align: right;
 	z-index: 2;
+
   }
 
   .sidebar-content h3 {
 	  display: block;
 	  text-align: right;
+	  font-family: 'JetBrainsMono';
 	  font-size: 14px;
+	  font-weight: 400;
 	  font-style: italic;
+	  color: var(--body-color);
   }
+
 
   .multi-column {
 	  clear: both;
-	  height: 500px; /* or any max height */
+	  height: auto; /* or any max height */
 	  column-count: 2;
 	  column-gap: 20px;
 	  overflow-y: auto; /* optional, for scroll */
@@ -116,6 +155,28 @@
 	  text-align: justify;
 	  text-justify: inter-word;
 	  margin-top: 20px;
+	  color: var(--body-color);
+	  font-family: 'JetBrainsMono';
+	  font-weight: 300;
+	  font-style: normal;
+	  font-size: 0.6rem;  /* adjust as needed */
+
+  }
+
+  .sidebar-content a {
+		clear: both;
+		column-count: 1;
+		column-gap: 20px;
+		overflow-y: auto; /* optional, for scroll */
+		width: 80%;
+		float: right;
+		text-align: justify;
+		text-justify: inter-word;
+		margin-top: 20px;
+		color: var(--body-color);
+		font-family: 'Manrope';
+		font-weight: 300;
+		font-style: normal;
   }
 
   .sidebar-columns {
