@@ -114,4 +114,8 @@ a {
   color: lightgray;
   font-weight: bold;
 }
+
+#details-container {
+	display: block;
+  }
 }

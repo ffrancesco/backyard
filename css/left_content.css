@@ -1,0 +1,138 @@
+/* Left Sidebar */
+  .left-fixed {
+	position: fixed;
+	top: 60px;
+	left: 0;
+	width: 40vw;
+	min-width: 250px; /* minimum size to keep layout readable */
+  	max-width: 600px; /* max size so it doesn't get too big */
+	height: calc(100vh - 60px);
+	/*background-color: #5eda5c;*/
+	color: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	font-family: 'JetBrainsMono';
+	font-weight: 300;
+	font-style: normal;
+	overflow-y: auto; /* scroll if content too tall */
+    box-sizing: border-box;
+    flex-shrink: 0; /* don't shrink smaller than width */
+  }
+
+  .sidebar-content {
+    margin-left: auto;
+	display: none;
+    width: 100%;
+    /* optionally set max-width to constrain text lines */
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .sidebar-content.active {
+	display: block;
+	background-color: var(--content-background-color);
+	font-family: 'JetBrainsMono';
+	font-weight: 300;
+	font-style: normal;
+  }
+
+  /* Images inside sidebar scale */
+.sidebar-image-container img.sidebar-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+  .sidebar-image-container {
+	position: relative;
+	width: 100%;
+	height: auto; /* Adjust the height of the image */
+	margin-bottom: 20px;
+	margin-top: 50px;
+
+  }
+
+  .sidebar-image {
+	width: 60%;
+	object-fit: cover;
+	border-radius: 8px;
+	float: right;
+  }
+
+  /* Text Overlay on Image */
+  .overlay-text {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	transform: translate(-0%, -30%);
+	font-family: 'Manrope';
+	font-weight: 700;
+	font-style: normal;
+	line-height: 0.85;
+  	font-size: 3rem;  /* adjust as needed */
+	color: var(--body-color);
+	text-align: right;
+	z-index: 2;
+
+  }
+
+  .sidebar-content h3 {
+	  display: block;
+	  text-align: right;
+	  font-family: 'JetBrainsMono';
+	  font-size: 0.7rem; /* relative size */
+	  font-weight: 400;
+	  font-style: italic;
+	  color: var(--body-color);
+  }
+
+
+  .multi-column {
+	  clear: both;
+	  height: auto; /* or any max height */
+	  column-count: 2;
+	  column-gap: 20px;
+	  overflow-y: auto; /* optional, for scroll */
+	  width: 80%;
+	  float: right;
+	  text-align: justify;
+	  text-justify: inter-word;
+	  margin-top: 20px;
+	  color: var(--body-color);
+	  font-family: 'JetBrainsMono';
+	  font-weight: 300;
+	  font-style: normal;
+	  font-size: 0.6rem;  /* adjust as needed */
+
+  }
+
+  .sidebar-content a {
+		clear: both;
+		column-count: 1;
+		column-gap: 20px;
+		overflow-y: auto; /* optional, for scroll */
+		width: 80%;
+		float: right;
+		text-align: justify;
+		text-justify: inter-word;
+		margin-top: 20px;
+		color: var(--body-color);
+		font-family: 'Manrope';
+		font-weight: 300;
+		font-style: normal;
+  }
+
+  .sidebar-columns {
+	  clear: both;
+	  display: flex;
+	  justify-content: space-between;
+	  width: 80%;
+	  float: right;
+  }
+
+  .sidebar-column {
+	width: 48%;
+	padding: 10px;
+  }
